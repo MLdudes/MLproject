@@ -5,6 +5,8 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login {
 
@@ -51,11 +53,11 @@ public class Login {
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("\u038C\u03BD\u03BF\u03BC\u03B1");
-		lblNewLabel.setBounds(186, 97, 46, 14);
+		lblNewLabel.setBounds(186, 97, 62, 14);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("\u039A\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2");
-		lblNewLabel_1.setBounds(186, 133, 46, 14);
+		lblNewLabel_1.setBounds(186, 133, 62, 14);
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		passwordField = new JPasswordField();
@@ -63,6 +65,10 @@ public class Login {
 		frame.getContentPane().add(passwordField);
 		
 		JButton button = new JButton("\u03A3\u03CD\u03BD\u03B4\u03B5\u03C3\u03B7");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		button.setBounds(218, 173, 89, 23);
 		frame.getContentPane().add(button);
 	}
