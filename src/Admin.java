@@ -39,7 +39,8 @@ public class Admin extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel label = new JLabel("\u0394\u03B9\u03B1\u03C7\u03B5\u03B9\u03C1\u03B9\u03C3\u03C4\u03AE\u03C2");
-		label.setBounds(240, 163, 123, 14);
+		label.setBounds(225, 158, 125, 14);
 		contentPane.add(label);
 	}
+
 }
