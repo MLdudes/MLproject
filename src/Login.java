@@ -67,6 +67,10 @@ public class Login {
 		JButton button = new JButton("\u03A3\u03CD\u03BD\u03B4\u03B5\u03C3\u03B7");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				frame.dispose();
+				User user=new User();
+				user.setVisible(true);
 			}
 		});
 		button.setBounds(218, 173, 89, 23);
